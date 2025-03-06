@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calculator {
+    background-color: #222;
+    border-radius: 15px;
+    width: 320px;
+    padding: 20px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid #111;
+}
+
+.display {
+    background-color: #b3ffb3;
+    color: #003300;
+    font-size: 32px;
+    font-family: 'Courier New', monospace;
+    width: 90%;
+    padding: 15px;
+    text-align: right;
+    border-radius: 5px;
+    border: inset 3px #888;
+    margin-bottom: 15px;
+    box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
+    white-space: nowrap;  
+    overflow-x: auto;  
+    direction: rtl;  
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+}
+
+button {
+    font-size: 20px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #666;
+    color: white;
+    transition: all 0.2s;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+    transform: scale(0.98);
+}
+
+button:nth-child(4),  
+button:nth-child(8),  
+button:nth-child(12), 
+button:nth-child(15), 
+button:nth-child(16)
+{
+    background-color: #ff9500;
+    color: white;
+}
+
+button:nth-child(4):hover,
+button:nth-child(8):hover,
+button:nth-child(12):hover,
+button:nth-child(15):hover,
+button:nth-child(16):hover {
+    background-color: #e08900;
+}
+
+button:nth-child(17) {
+    background-color: #d9534f;
+    color: white;
+}
+
+button:nth-child(17):hover {
+    background-color: #c9302c;
+}
+
+button:nth-child(18) {
+    background-color: #5cb85c;
+    color: white;
+}
+
+button:nth-child(18):hover {
+    background-color: #4cae4c;
+}
+
+button:nth-child(14) {
+    background-color: #777;
+}
+
+button:nth-child(15) {
+    background-color: #007bff;
+}
+
+button:nth-child(15):hover {
+    background-color: #0056b3;
+}
