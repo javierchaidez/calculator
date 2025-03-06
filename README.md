@@ -1,4 +1,6 @@
 # calculator
+Javier Chaidez
+
 Actividades:
 
 1. Crea los botones en el archivo HTML y realiza las modificiaciones al archivo styles.css que consideres pertinentes.
